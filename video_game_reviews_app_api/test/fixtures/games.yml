@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  platforms: MyString
+  image: MyString
+  description: MyString
+  genre: MyString
+  rating: MyString
+  developers: MyString
+  review: MyString
+  videos: MyString
+
+two:
+  name: MyString
+  platforms: MyString
+  image: MyString
+  description: MyString
+  genre: MyString
+  rating: MyString
+  developers: MyString
+  review: MyString
+  videos: MyString

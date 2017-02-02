@@ -27,11 +27,27 @@ Things you may want to cover:
 —-FINAL PROJECT: VIDEO_GAME REVIEW: 'CALL OF REVIEWS'—-
 -------------------------------------------------------
 
-specific to me M.V.P for Final Project
+-portfolio - styling/straight css - requirement
 
--in portfolio - styling/straight css - requirement
--complete above by Thursday
+----------------App Notes--------------------------
 
+-One user has many games (each user has own instance of individual game, game can be grabbed from gem or created)
+
+-Games index route (nested route inside users): /users/1/games
+
+-What the JSON endpoint should serve up, all of a user’s games:
+
+{ user: { username:    , id:  , games: [] } }
+
+Games show page: users/1/games/55
+
+----------------M.V.P for Final Project (by Thursday)--------------------------
+
+Backend MVP: full crud user, full crud games, user auth, findGame route that uses gem
+
+Frontend MVP: get game from API, create new game, show game index, user signup, login, logout
+
+Stretch: Nice-looking
 -----------------------------------------------------
 ———————————RELATIONSHIPS———————————————————
 -----------------------------------------------------
@@ -70,15 +86,16 @@ user_image (string)
         ——      				   thumbnail (string)
 	——					   game_description (string)
 	——					   game_rating (integer)
+  --             game_review (string)
 	——					     		———
 	——				           	    	      ———
 	——							    	   ———
 	——							                 ———
-	————————————————————— ——REVIEWS
+	<!-- ————————————————————— ——REVIEWS
  											     —
 											user_id (integer)
 											video_game_id (integer)
-											video_game_review (string)
+											video_game_review (string) -->
 
 
 -----------------------------------------------------
@@ -97,8 +114,8 @@ user_image (string)
 -----------------------------------------------------
 
 USER (min: create |||||||||||||| max: create, destroy , update, show)
-VIDEO_GAME (min/max: show)
-REVIEWS (min: create, show, update, destroy)
+VIDEO_GAME (min/max: create, show, destroy)
+<!-- REVIEWS (min: create, show, update, destroy) -->
 
 -----------------------------------------------------
 ————————————API KEY FOR GIANTBOMB API————————————-
