@@ -22,3 +22,85 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+-------------------------------------------------------
+—-FINAL PROJECT: VIDEO_GAME REVIEW: 'CALL OF REVIEWS'—-
+-------------------------------------------------------
+
+specific to me M.V.P for Final Project
+
+-in portfolio - styling/straight css - requirement
+-complete above by Thursday
+
+-----------------------------------------------------
+———————————RELATIONSHIPS———————————————————
+-----------------------------------------------------
+
+-3 models
+	-user, video_games, reviews
+
+-these are one to many relationships
+
+
+	-user
+	    -has_many :video_games
+	    -has_many :reviews
+	-game
+	    -belongs_to :user
+	    -has_many :reviews
+	-review
+	    -belongs_to :user
+	    -belongs_to :video_game
+
+
+USER
+   —
+username (string)
+encrypted_password (string) aka password_digest
+email (string) ---add functionality later
+user_image (string)
+	——			——
+	——                     ——
+	——			      ——
+	——			          ——
+	——					  VIDEO_GAME
+         ——                                       —
+	——					   user_id (integer)
+	——					   game_name (string)
+        ——      				   thumbnail (string)
+	——					   game_description (string)
+	——					   game_rating (integer)
+	——					     		———
+	——				           	    	      ———
+	——							    	   ———
+	——							                 ———
+	————————————————————— ——REVIEWS
+ 											     —
+											user_id (integer)
+											video_game_id (integer)
+											video_game_review (string)
+
+
+-----------------------------------------------------
+————————————-USER STORIES———————————————————
+-----------------------------------------------------
+
+-user signs up
+-user logs in, can choose to delete user account  
+-user selects from list of video_games, reviews, or types in name of video_game
+-game thumbnail, description, and game rating populate on screen
+-user can create a review of the game, review can be edited, deleted
+
+
+-----------------------------------------------------
+————————————ROUTES PLAN———————————————————
+-----------------------------------------------------
+
+USER (min: create |||||||||||||| max: create, destroy , update, show)
+VIDEO_GAME (min/max: show)
+REVIEWS (min: create, show, update, destroy)
+
+-----------------------------------------------------
+————————————API KEY FOR GIANTBOMB API————————————-
+52304d7c9dda9771814ff56149b186d55f0564ed
+-----------------------------------------------------

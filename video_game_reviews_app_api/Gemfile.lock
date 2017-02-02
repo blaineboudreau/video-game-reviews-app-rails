@@ -49,8 +49,12 @@ GEM
       railties (>= 3.2, < 5.1)
     erubis (2.7.0)
     ffi (1.9.17)
+    giantbomb-api (1.6.1)
+      httparty
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    httparty (0.14.0)
+      multi_xml (>= 0.5.2)
     i18n (0.8.0)
     jwt (1.5.6)
     listen (3.0.8)
@@ -66,6 +70,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
+    multi_xml (0.6.0)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
@@ -128,6 +133,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   byebug
   dotenv-rails (~> 2.1, >= 2.1.1)
+  giantbomb-api (~> 1.6.0)
   jwt
   listen (~> 3.0.5)
   pg (~> 0.18)
