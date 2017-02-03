@@ -3,19 +3,20 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    @games = Game.all
-
-    render json: @games
+    users_games =
+    Users_games.where(user_id: params[:user_id])
+    render json: users_games, status: 200
   end
 
   # GET /games/1
   def show
-    render json: @game
+    render json: @game, status: 200
   end
 
   # POST /games
   def create
     @game = Game.new(game_params)
+    @game.user_id = params[:user_id]
 
     if @game.save
       render json: @game, status: :created, location: @game
@@ -36,6 +37,8 @@ class GamesController < ApplicationController
   # DELETE /games/1
   def destroy
     @game.destroy
+
+    render json: @game, status: 200
   end
 
   private
