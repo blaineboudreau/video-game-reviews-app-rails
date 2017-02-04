@@ -8,16 +8,16 @@ class GamesController < ApplicationController
     render json: @games, status: 200
   end
 
-  def search
-    @games = Game.search(params[:query])
-  end
-
   # GET /games/1
   def show
     @game =
     Game.where(user_id: params[:user_id])
 
     render json: @game
+  end
+
+  def search
+    @games = Game.search(params[:query])
   end
 
   # POST /games
