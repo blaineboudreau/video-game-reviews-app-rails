@@ -3,14 +3,20 @@ class GamesController < ApplicationController
 
   # GET /games
   def index
-    users_games =
-    Users_games.where(user_id: params[:user_id])
-    render json: users_games, status: 200
+    @games =
+    Game.where(user_id: params[:user_id])
+    render json: @games, status: 200
+  end
+
+  def search
+    @games = Game.search(params[:query])
   end
 
   # GET /games/1
   def show
-    render json: @game, status: 200
+    @game =
+    Game.where(user_id: params[:user_id])
+    render json: @game
   end
 
   # POST /games
@@ -19,7 +25,7 @@ class GamesController < ApplicationController
     @game.user_id = params[:user_id]
 
     if @game.save
-      render json: @game, status: :created, location: @game
+      render json: @game, status: :created
     else
       render json: @game.errors, status: :unprocessable_entity
     end
@@ -49,6 +55,6 @@ class GamesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def game_params
-      params.require(:game).permit(:name, :platforms, :image, :description, :genre, :rating, :developers, :review, :videos)
+      params.require(:game).permit(:name, :platforms, :image, :description, :genre, :rating, :developers, :publisher, :review, :videos, :release_date, :user_id)
     end
 end
