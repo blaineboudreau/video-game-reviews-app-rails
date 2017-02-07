@@ -10,9 +10,6 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
-    @game =
-    Game.where(user_id: params[:user_id])
-
     render json: @game
   end
 
