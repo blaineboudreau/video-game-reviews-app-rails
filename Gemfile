@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 gem 'giantbomb-api', '~> 1.6.0'
 
+gem 'giantbomb', '~> 0.5.2'
+
 gem 'jwt'
 
 gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
