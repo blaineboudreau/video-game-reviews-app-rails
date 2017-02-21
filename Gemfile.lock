@@ -51,8 +51,6 @@ GEM
     ffi (1.9.17)
     giantbomb (0.5.2)
       httparty
-    giantbomb-api (1.6.1)
-      httparty
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     httparty (0.14.0)
@@ -137,7 +135,7 @@ DEPENDENCIES
   byebug
   dotenv-rails (~> 2.1, >= 2.1.1)
   giantbomb (~> 0.5.2)
-  giantbomb-api (~> 1.6.0)
+  httparty (~> 0.14.0)
   jwt
   listen (~> 3.0.5)
   pg (~> 0.18)

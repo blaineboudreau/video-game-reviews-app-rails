@@ -4,7 +4,10 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-gem 'giantbomb-api', '~> 1.6.0'
+
+gem 'httparty', '~> 0.14.0'
+
+# gem 'giantbomb-api', '~> 1.6.0'
 
 gem 'giantbomb', '~> 0.5.2'
 
