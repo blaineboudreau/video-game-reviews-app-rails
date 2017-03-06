@@ -185,9 +185,9 @@ VIDEO_GAME (min/max: create, show, destroy)
 
 [ DAILY ] ———Temp Jobs———
 
-	—Apply Stocking Jobs
+	—Apply 2 per day
 
-		- Albertsons, Wal-mart, Lowes
+		- 20-40 hours a week, low stress, pass time while searching for dev jobs
 ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 ——————————————————————————————————————————————————————————————————————————————————— ————————————————————————MISC.———————————————————————————————————————————————————————
@@ -199,14 +199,6 @@ VIDEO_GAME (min/max: create, show, destroy)
 
 	-5 Mile Interval Workout for 30 Days
 
-[ 24/7 ] ———Do Taxes
+[ ] ———Do Taxes
 
-	-TurboTax
-
-[ DAILY ] ———Phone
-
-	-Unlock iphone 5c with Sprint/Activate through AT&T
-
-	-Purchase go phone with AT&T
-
-	-Request sim card for iphone 3/3s with AT&T
+		-TurboTax, complete with student loan info and healthcare info

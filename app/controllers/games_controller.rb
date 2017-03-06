@@ -13,7 +13,7 @@ class GamesController < ApplicationController
     render json: @game
   end
 
-  # GET 
+  # GET
   def search
     @games = Game.search(params[:query])
   end

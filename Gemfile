@@ -9,7 +9,7 @@ gem 'httparty', '~> 0.14.0'
 
 gem 'giantbomb-api', '~> 1.6.0'
 
-gem 'giantbomb', '~> 0.5.2'
+# gem 'giantbomb', '~> 0.5.2'
 
 gem 'jwt'
 
